@@ -1,0 +1,23 @@
+// COLORS
+$color1: hsl(322, 100%, 66%);
+$color2: hsl(265, 100%, 66%);
+$ntrl-blue: hsl(214, 64%, 98%);
+$ntrl-gray-blue: hsl(208, 11%, 55%);
+$ntrl-dark-cyan: hsl(192, 100%, 9%);
+
+// mixins
+@mixin big {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
+// components
+@mixin btn {
+  padding: 10px 35px;
+  background: $color1;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 2px 18px -3px $color1;
+}
